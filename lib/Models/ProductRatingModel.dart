@@ -8,8 +8,8 @@ class ProductRatingMD{
 
   factory ProductRatingMD.fromJson(jsonData) {
     return ProductRatingMD(
-      rate: double.parse(jsonData["rate"]),
-      count: double.parse(jsonData["count"]),
+      rate: double.parse(jsonData["rate"].toString()),
+      count: double.parse(jsonData["count"].toString()),
     );
   }
 }

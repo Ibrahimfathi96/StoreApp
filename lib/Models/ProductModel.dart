@@ -22,7 +22,7 @@ class ProductMD {
     return ProductMD(
       id: int.parse(jsonData["id"]),
       title: jsonData["title"],
-      price: double.parse(jsonData["price"]),
+      price: double.parse(jsonData["price"].toString()),
       description: jsonData["description"],
       category: jsonData["category"],
       image: jsonData["image"],
